@@ -12,7 +12,7 @@ $rows = for ($i = 1; $i -le 300; $i++) {
         (0.20 * $attendance) +
         (0.30 * $previousScore) +
         (0.35 * $assignmentScore) +
-        (1.5 * $studyHours) +
+        (3.0 * $studyHours) +
         $noise
     )
     $finalMarks = [math]::Max(0, [math]::Min(100, $finalMarks))
